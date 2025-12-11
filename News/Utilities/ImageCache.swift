@@ -5,8 +5,6 @@
 //  Created by Md Zahidul Islam  on 12/12/25.
 //
 
-
-// Presentation/Views/ImageCache.swift
 import UIKit
 
 final class ImageCache {
