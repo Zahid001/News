@@ -1,0 +1,12 @@
+//
+//  Config-Prod.xcconfig
+//  News
+//
+//  Created by Md Zahidul Islam  on 12/12/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+
+APP_ENV = prod
+NEWS_API_KEY = f23a88e56e0245b69da3b9c6507a8e48
