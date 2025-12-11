@@ -8,3 +8,9 @@
 	•	e.g., Estimated time: 10–12 hours (including setup, architecture, and testing).
 	•	Limitations / Future improvements
 	•	Pagination, offline caching, more filters, search, etc.
+ 
+ ## Screenshots
+
+| Home | Details |
+|-----|--------|
+| ![](SS/1.png) | ![](SS/2.png) |   
