@@ -1,5 +1,5 @@
 //
-//  ArticleCellViewModel.swift
+//  ArticlesListViewModel.swift
 //  News
 //
 //  Created by Md Zahidul Islam  on 12/12/25.

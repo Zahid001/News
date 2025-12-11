@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DB5FC4492EEB3C12003E41DB /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB5FC4482EEB3C12003E41DB /* RxSwift */; };
+		DB5FC45E2EEB40D1003E41DB /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DB5FC45D2EEB40D1003E41DB /* RxCocoa */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB5FC45E2EEB40D1003E41DB /* RxCocoa in Frameworks */,
 				DB5FC4492EEB3C12003E41DB /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				DB5FC4092EEB39B2003E41DB /* News */,
+				DB5FC45C2EEB40D1003E41DB /* Frameworks */,
 				DB5FC4082EEB39B2003E41DB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +64,13 @@
 				DB5FC4072EEB39B2003E41DB /* News.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DB5FC45C2EEB40D1003E41DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +94,7 @@
 			name = News;
 			packageProductDependencies = (
 				DB5FC4482EEB3C12003E41DB /* RxSwift */,
+				DB5FC45D2EEB40D1003E41DB /* RxCocoa */,
 			);
 			productName = News;
 			productReference = DB5FC4072EEB39B2003E41DB /* News.app */;
@@ -149,6 +160,8 @@
 /* Begin XCBuildConfiguration section */
 		DB5FC41B2EEB39B3003E41DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = DB5FC4092EEB39B2003E41DB /* News */;
+			baseConfigurationReferenceRelativePath = "Config-Dev.xcconfig";
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -181,6 +194,8 @@
 		};
 		DB5FC41C2EEB39B3003E41DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = DB5FC4092EEB39B2003E41DB /* News */;
+			baseConfigurationReferenceRelativePath = "Config-Prod.xcconfig";
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -213,6 +228,8 @@
 		};
 		DB5FC41D2EEB39B3003E41DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = DB5FC4092EEB39B2003E41DB /* News */;
+			baseConfigurationReferenceRelativePath = "Config-Dev.xcconfig";
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -277,6 +294,8 @@
 		};
 		DB5FC41E2EEB39B3003E41DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = DB5FC4092EEB39B2003E41DB /* News */;
+			baseConfigurationReferenceRelativePath = "Config-Prod.xcconfig";
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -371,6 +390,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DB5FC4472EEB3C12003E41DB /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		DB5FC45D2EEB40D1003E41DB /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB5FC4472EEB3C12003E41DB /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
