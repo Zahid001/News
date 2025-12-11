@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DB5FC4492EEB3C12003E41DB /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DB5FC4482EEB3C12003E41DB /* RxSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DB5FC4072EEB39B2003E41DB /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB5FC4492EEB3C12003E41DB /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = News;
 			packageProductDependencies = (
+				DB5FC4482EEB3C12003E41DB /* RxSwift */,
 			);
 			productName = News;
 			productReference = DB5FC4072EEB39B2003E41DB /* News.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = DB5FC3FE2EEB39B2003E41DB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DB5FC4472EEB3C12003E41DB /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DB5FC4082EEB39B2003E41DB /* Products */;
 			projectDirPath = "";
@@ -345,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB5FC4472EEB3C12003E41DB /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB5FC4482EEB3C12003E41DB /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB5FC4472EEB3C12003E41DB /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB5FC3FF2EEB39B2003E41DB /* Project object */;
 }
