@@ -1,4 +1,10 @@
-// Presentation/Coordinators/Coordinator.swift
+//
+//  Coordinator.swift
+//  News
+//
+//  Created by Md Zahidul Islam  on 12/12/25.
+//
+
 import UIKit
 
 protocol Coordinator: AnyObject {

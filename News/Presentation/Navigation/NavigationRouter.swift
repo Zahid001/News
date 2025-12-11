@@ -1,4 +1,10 @@
-// Presentation/Navigation/NavigationRouter.swift
+//
+//  NavigationRouter.swift
+//  News
+//
+//  Created by Md Zahidul Islam  on 12/12/25.
+//
+
 import UIKit
 
 final class NavigationRouter: Router {

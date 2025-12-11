@@ -1,25 +1,51 @@
-// App/AppCoordinator.swift
+//
+//  AppCoordinator.swift
+//  News
+//
+//  Created by Md Zahidul Islam  on 12/12/25.
+//
+
 import UIKit
 
-final class AppCoordinator {
+final class AppCoordinator: BaseCoordinator {
     
     private let window: UIWindow
-    private var rootNavigationController: UINavigationController?
+    private let router: Router
+    
     private var articlesCoordinator: ArticlesCoordinator?
     
     init(window: UIWindow) {
         self.window = window
+        let navController = UINavigationController()
+        self.router = NavigationRouter(navigationController: navController)
+        super.init()
+        
+        window.rootViewController = navController
+        window.makeKeyAndVisible()
     }
     
-    func start() {
-        let navigationController = UINavigationController()
-        self.rootNavigationController = navigationController
-        
-        let articlesCoordinator = ArticlesCoordinator(navigationController: navigationController)
+    override func start() {
+        showArticlesFlow()
+    }
+    
+    // MARK: - Flows
+    
+    private func showArticlesFlow() {
+        let articlesCoordinator = ArticlesCoordinator(router: router)
         self.articlesCoordinator = articlesCoordinator
-        articlesCoordinator.start()
+        addChild(articlesCoordinator)
         
-        window.rootViewController = navigationController
-        window.makeKeyAndVisible()
+        articlesCoordinator.onFinish = { [weak self, weak articlesCoordinator] in
+            if let articlesCoordinator = articlesCoordinator {
+                self?.removeChild(articlesCoordinator)
+            }
+        }
+        
+        articlesCoordinator.start()
+    }
+    
+    // Example if you later want to reset root (e.g., after logout)
+    func resetToRoot() {
+        router.popToRoot(animated: false)
     }
 }
