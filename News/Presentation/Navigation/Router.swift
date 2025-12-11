@@ -1,4 +1,10 @@
-// Presentation/Navigation/Router.swift
+//
+//  Router.swift
+//  News
+//
+//  Created by Md Zahidul Islam  on 12/12/25.
+//
+
 import UIKit
 
 protocol Router {
